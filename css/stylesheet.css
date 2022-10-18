@@ -9,6 +9,7 @@ h1 {
 nav {
     background-color: lightblue;
     text-align: center;
+    list-style-position: inside;
 }
 
 .indexheading {
