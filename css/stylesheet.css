@@ -38,23 +38,12 @@ h1 {
     grid-column: 1 / span 2;
 }
 
-.grid-courses {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem
-}
-
-.row-border{
-    border-top: 1px solid gray;
-    grid-column: 1 / 2;
-}
-
 img {
     padding: 10px;
 }
 
 main p {
-    padding: 5px;
+    padding: 0px;
 }
 
 header {
@@ -65,3 +54,33 @@ footer {
     margin: 1rem 0;
 }
 
+.container-courses {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-courses > * {
+    margin-bottom: 5px;
+}
+
+.container-courses > *:first-child {
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 600px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container-courses {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 50px 50px;
+    }
+
+    .container-courses > *:last-child {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 2;
+    }
+}
