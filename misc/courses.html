@@ -3,18 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Courses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body>
-        <header class="center-align"><h1>My courses</h1></header>
+        <header class="center-align">
+            <h1>My courses</h1>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="school.html">school</a></li>
+            </ul>
+        </header>
         
         <main>
-            <ul>
-                <li><a href="https://www.bcit.ca/outlines/20223048467/">Web technology</a></li>
-                <li>Database system</li>
-                <li>Python programming</li>
-            </ul>            
+            <div class="grid-courses">
+                <div><a href="https://www.bcit.ca/outlines/acit1420/">ACIT 1420 - Introduction to Systems Administration</a></div>
+                <div>Fall 2020</div>
+                <div>This course introduces students to the configuration, maintenance, and administration of a Windows laptop computer.</div>
+                <div class="row-border"></div>
+                <div><a href="https://www.bcit.ca/outlines/acit1620/">ACIT 1620 - Fundamental Web Technologies</a></div>
+                <div>Fall 2020</div>
+                <div>This course introduces the fundamental principles and techniques for designing and developing effective Web sites.</div>
+                <div class="row-border"></div>
+                <div><a href="https://www.bcit.ca/outlines/acit1630/">ACIT 1630 - Database System</a></div>
+                <div>Fall 2020</div>
+                <div>This course covers relational and NoSQL database technologies</div>
+            </div>
         </main>
+        <footer class="center-align">
+            <p>Copyright data</p>
+          </footer>  
     </body>
 </html>

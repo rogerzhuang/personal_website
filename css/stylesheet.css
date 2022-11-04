@@ -16,7 +16,8 @@ h1 {
 .nav-menu {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-menu a {
@@ -37,6 +38,17 @@ h1 {
     grid-column: 1 / span 2;
 }
 
+.grid-courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem
+}
+
+.row-border{
+    border-top: 1px solid gray;
+    grid-column: 1 / 2;
+}
+
 img {
     padding: 10px;
 }
@@ -44,3 +56,12 @@ img {
 main p {
     padding: 5px;
 }
+
+header {
+    margin: 1rem 0;
+}
+
+footer {
+    margin: 1rem 0;
+}
+
